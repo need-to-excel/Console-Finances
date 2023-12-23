@@ -86,3 +86,19 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+var totalMonths = finances.length
+console.log("Total number of months is " + totalMonths);
+var netProfitLoses = 0
+
+for(let index = 0; index < finances.length; index++) {
+  const profitLoss = finances[index][1];
+   netProfitLoses += profitLoss
+  if(index > 0){
+    var change=finances[index][1]
+  }
+  
+}
+console.log("Total: " + netProfitLoses)
+
