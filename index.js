@@ -88,17 +88,35 @@ var finances = [
 ];
 
 
-var totalMonths = finances.length
-console.log("Total number of months is " + totalMonths);
-var netProfitLoses = 0
+// var totalMonths = finances.length;
+// console.log("Total number of months is " + totalMonths);
+// var netProfitLoses = 0;
 
-for(let index = 0; index < finances.length; index++) {
-  const profitLoss = finances[index][1];
-   netProfitLoses += profitLoss
-  if(index > 0){
-    var change=finances[index][1]
-  }
+
+// for (let index = 0; index < finances.length; index++) {
+//   const monthEntry = finances[index];
+//   const profitLoss = monthEntry[1];
+//    netProfitLoses += profitLoss;
+// }
   
+// console.log("Total: " + netProfitLoses);
+
+var profitChangeTotal = 0;
+var maxProfitIncrease = 0;
+
+for (let index = 0; index < finances.length - 1; index++) {
+  var secondMonthProfit = finances[index + 1][1];
+  var firstMonthProfit = finances[index][1];
+  var profitChange = secondMonthProfit - firstMonthProfit;
+  // console.log("Profit Change is " + profitChange);
+  profitChangeTotal += profitChange;
+  if (profitChange > 0) {
+    if (profitChange > maxProfitIncrease) {
+      maxProfitIncrease = profitChange;
+    }
+  }
 }
-console.log("Total: " + netProfitLoses)
+var profitChangeAverage = profitChangeTotal / (finances.length - 1);
+console.log("Profit Change Average is " + profitChangeAverage);
+console.log("Maximum profit change is " + maxProfitIncrease);
 
