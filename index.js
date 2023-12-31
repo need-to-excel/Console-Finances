@@ -136,4 +136,4 @@ for (let index = 0; index < finances.length - 1; index++) {
     }
   }
 }
-console.log("Maximum profit deccrease is " + maxProfitDecreaseMonth + "($" + maxProfitDecrease +")");
+console.log("Maximum profit decrease is " + maxProfitDecreaseMonth + "($" + maxProfitDecrease +")");
