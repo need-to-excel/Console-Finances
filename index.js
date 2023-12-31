@@ -103,7 +103,7 @@ console.log("Total: " + "$" + netProfitLoses);
 
 var profitChangeTotal = 0;
 var maxProfitIncrease = 0;
-var maxProfitIncreaseMonth = 0;
+var maxProfitIncreaseMonth = [];
 
 for (let index = 0; index < finances.length - 1; index++) {
   var secondMonthProfit = finances[index + 1][1];
@@ -122,7 +122,7 @@ console.log("Profit Change Average is " + Math.round(profitChangeAverage *100) /
 console.log("Maximum profit increase is " + maxProfitIncreaseMonth + "($" + maxProfitIncrease +")");
 
 var maxProfitDecrease = 0;
-var maxProfitDecreaseMonth = 0;
+var maxProfitDecreaseMonth = [];
 
 for (let index = 0; index < finances.length - 1; index++) {
   var secondMonthProfit = finances[index + 1][1];
