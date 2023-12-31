@@ -88,18 +88,18 @@ var finances = [
 ];
 
 
-// var totalMonths = finances.length;
-// console.log("Total number of months is " + totalMonths);
-// var netProfitLoses = 0;
+var totalMonths = finances.length;
+console.log("Total number of months is " + totalMonths);
+var netProfitLoses = 0;
 
 
-// for (let index = 0; index < finances.length; index++) {
-//   const monthEntry = finances[index];
-//   const profitLoss = monthEntry[1];
-//    netProfitLoses += profitLoss;
-// }
+for (let index = 0; index < finances.length; index++) {
+  const monthEntry = finances[index];
+  const profitLoss = monthEntry[1];
+   netProfitLoses += profitLoss;
+}
   
-// console.log("Total: " + netProfitLoses);
+console.log("Total: " + "$" + netProfitLoses);
 
 var profitChangeTotal = 0;
 var maxProfitIncrease = 0;
@@ -109,8 +109,7 @@ for (let index = 0; index < finances.length - 1; index++) {
   var secondMonthProfit = finances[index + 1][1];
   var firstMonthProfit = finances[index][1];
   var profitChange = secondMonthProfit - firstMonthProfit;
-  // console.log("Profit Change is " + profitChange);
-  profitChangeTotal += profitChange;
+   profitChangeTotal += profitChange;
   if (profitChange > 0) {
     if (profitChange > maxProfitIncrease) {
       maxProfitIncrease = profitChange;
@@ -120,7 +119,7 @@ for (let index = 0; index < finances.length - 1; index++) {
 }
 var profitChangeAverage = profitChangeTotal / (finances.length - 1);
 console.log("Profit Change Average is " + Math.round(profitChangeAverage *100) / 100);
-console.log("Maximum profit increase is " + maxProfitIncreaseMonth + "(" + maxProfitIncrease +")");
+console.log("Maximum profit increase is " + maxProfitIncreaseMonth + "($" + maxProfitIncrease +")");
 
 var maxProfitDecrease = 0;
 var maxProfitDecreaseMonth = 0;
@@ -129,8 +128,7 @@ for (let index = 0; index < finances.length - 1; index++) {
   var secondMonthProfit = finances[index + 1][1];
   var firstMonthProfit = finances[index][1];
   var profitChange = secondMonthProfit - firstMonthProfit;
-  // console.log("Profit Change is " + profitChange);
-  profitChangeTotal += profitChange;
+   profitChangeTotal += profitChange;
   if (profitChange < 0) {
     if (profitChange < maxProfitDecrease) {
       maxProfitDecrease = profitChange;
@@ -138,4 +136,4 @@ for (let index = 0; index < finances.length - 1; index++) {
     }
   }
 }
-console.log("Maximum profit deccrease is " + maxProfitDecreaseMonth + "(" + maxProfitDecrease +")");
+console.log("Maximum profit deccrease is " + maxProfitDecreaseMonth + "($" + maxProfitDecrease +")");
