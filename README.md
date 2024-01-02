@@ -1,81 +1,13 @@
 # Console-Finances
-Unit 4 Challenge: Console Finances
-Overview
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the starter/index.js file.
 
-Instructions
-Create a new GitHub repo called Console-Finances. Then, clone it to your computer.
+Set up a vaiable called totalMonths which is equal to array length to diplay the number of months. 
+Set up a variable netProfitLosses and run for loop to go through the array to calculate total ammount of all transations. 
+Set up a variable profitChangeTotal to calculate the profit change and run for loop to calculate the change in profits from months to months. Used this variable to calculate the average profit changes, which I then displayed through the console. 
+Set up a variable maxPofitIncrease to calculate the maximum profit increase through the same for loop. Displayed this through the console. 
+Set up the maxProfitIncreaseMonth variable to display the month [index + 1][0] to display the months for the maximum profit increase. 
+Set up the maxProfitDecrease to calculate the maximum profit decrease through a new loop. Displayed this through the console. 
+Set up the maxProfitDecreaseeMonth variable to display the month [index + 1][0] to display the months for the maximum profit increase. 
 
-Copy the starter files in your local git repository.
+URL to the deployed application https://need-to-excel.github.io/Console-Finances/Links to an external site.
 
-You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
-
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
-
-The total number of months included in the dataset.
-
-The net total amount of Profit/Losses over the entire period.
-
-The average of the changes in Profit/Losses over the entire period.
-
-You will need to track what the total change in Profit/Losses are from month to month and then find the average.
-(Total/(Number of months - 1))
-The greatest increase in Profit/Losses (date and difference in the amounts) over the entire period.
-
-The greatest decrease in Profit/Losses (date and difference in the amounts) over the entire period.
-
-When you open your code in the browser your resulting analysis should look similar to the following:
-
-Financial Analysis 
-----------------
-Total Months: 86
-Total: $38382578
-Average Change: -2315.12
-Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
-Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
-Your final code should print the analysis to the console.
-
-Hints:
-
-You will need to do some research on your own for this project!
-
-Remember, in order to combine strings and variables in the console you will need to use concatenation.
-
-How do you only print to the nearest 100th in JavaScript?
-
-Grading Requirements
-This homework is graded based on the following criteria:
-
-Technical Acceptance Criteria: 40%
-Satisfies all of the above acceptance criteria.
-Deployment: 32%
-Application deployed at live URL.
-
-Application loads with no errors.
-
-Application GitHub URL submitted.
-
-GitHub repository contains application code.
-
-Repository Quality: 23%
-Repository has a unique name.
-
-Repository follows best practices for file structure and naming conventions.
-
-Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
-
-Repository contains multiple descriptive commit messages.
-
-Repository contains quality README file with description, screenshot, and link to deployed application.
-
-Application Quality: 5%
-Application resembles the mock-up functionality provided in the Challenge instructions.
-Review
-You are required to submit BOTH of the following for review:
-
-The URL of the deployed application.
-
-The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
-Copyright
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+URL to the GitHub Repository https://github.com/need-to-excel/Console-FinancesLinks to an external site. 
